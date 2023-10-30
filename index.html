@@ -1,3 +1,357 @@
-<p>Hello World Local <p>
-<p>This is a new feature in html file</p>
-<p> This is add feature1 (new add line)</p>
+<html>
+    <head>
+       <script> window._izq = window._izq || []; window._izq.push(["init"]); </script>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Panel Web Page</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+               h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+               body {font-family: "Open Sans"}
+        </style>
+    </head>
+    
+        <body class="w3-light-grey">
+
+            <!-- Navigation bar with social media icons -->
+            <div class="w3-bar w3-black w3-hide-small">
+              <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+              <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+              <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+              <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+            </div>
+              
+            <!-- w3-content defines a container for fixed size centered content, 
+            and is wrapped around the whole page content, except for the footer in this example -->
+            <div class="w3-content" style="max-width:1600px">
+            
+              <!-- Header -->
+              <header class="w3-container w3-center w3-padding-48 w3-white">
+                <h1 class="w3-xxxlarge"><b> Panel Web Site</b></h1>
+                <h6>Welcome to the website  <span class="w3-tag">Dummy's world</span></h6>
+              </header>
+            
+              <!-- Image header -->
+              <header class="w3-display-container w3-wide" id="home">
+                <img class="w3-image" src="https://i.pinimg.com/736x/59/f0/d7/59f0d7e2c6633aae72277ad9865d56fb.jpg" alt="Fashion Blog" width="1600" height="1060">
+                <div class="w3-display-left w3-padding-large">
+                  <h1 class="w3-text-white">Jane's</h1>
+                  <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>FASHION BLOG</b></h1>
+                  <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+                </div>
+              </header>
+            
+              <!-- Grid -->
+              <div class="w3-row w3-padding w3-border">
+            
+                <!-- Blog entries -->
+                <div class="w3-col l8 s12">
+                
+                  <!-- Blog entry -->
+                  <div class="w3-container w3-white w3-margin w3-padding-large">
+                    <div class="w3-center">
+                      <h3>TITLE HEADING</h3>
+                      <h5>Title description, <span class="w3-opacity">May 2, 2016</span></h5>
+                    </div>
+            
+                    <div class="w3-justify">
+                      <img src="https://wallpaper.dog/large/20504919.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+                      <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+                        magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                      <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                      <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+                      <p class="w3-clear"></p>
+                      <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+                        <hr>
+                          <div class="w3-col l2 m3">
+                            <img src="https://cdn.wallpapersafari.com/56/95/HmkWpt.jpg" style="width:90px;">
+                          </div>
+                          <div class="w3-col l10 m9">
+                            <h4>George <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
+                            <p>Great blog post! Following</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+            
+                  <!-- Blog entry -->
+                  <div class="w3-container w3-white w3-margin w3-padding-large">
+                    <div class="w3-center">
+                      <h3>TITLE HEADING</h3>
+                      <h5>Title description, <span class="w3-opacity">April 23, 2016</span></h5>
+                    </div>
+            
+                    <div class="w3-justify">
+                      <img src="https://iphoneswallpapers.com/wp-content/uploads/2023/02/Braided-Hair-Girl-iPhone-Wallpaper-HD.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+                      <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
+                      <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+                        mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                      <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                      <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+                      <p class="w3-clear"></p>
+                      
+                      <!-- Example of comment field -->
+                      <div id="demo2" style="display:none">
+                        <div class="w3-row">
+                          <hr>
+                          <div class="w3-col l2 m3">
+                            <img src="https://i.pinimg.com/736x/62/e8/74/62e874f534112103b26a4befe677eb72.jpg" style="width:90px;">
+                          </div>
+                          <div class="w3-col l10 m9">
+                            <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
+                            <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+                          </div>
+                        </div>
+                        <div class="w3-row w3-margin-bottom">
+                          <div class="w3-col l2 m3">
+                            <img src="https://i.pinimg.com/originals/e2/f7/cf/e2f7cf5b8d3c5feefa9dc3dc107e895d.jpg" style="width:90px;">
+                          </div>
+                          <div class="w3-col l10 m9">
+                            <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                            <p>Love hats!!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Blog entry -->
+                  <div class="w3-container w3-white w3-margin w3-padding-large">
+                    <div class="w3-center">
+                      <h3>TITLE HEADING</h3>
+                      <h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>
+                    </div>
+            
+                    <div class="w3-justify">
+                      <img src="https://e0.pxfuel.com/wallpapers/326/724/desktop-wallpaper-drawings-aesthetic-girly-fashion-cartoon-thumbnail.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+                      <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!</p>
+                      <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+                        mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                      <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                      <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+                      <p class="w3-clear"></p>
+                      
+                      <!-- Example of comment field -->
+                      <div id="demo3" style="display:none">
+                        <hr>
+                        <div class="w3-row w3-margin-bottom">
+                          <div class="w3-col l2 m3">
+                            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fashion-lady-Wallpaper.jpg" style="width:90px;">
+                          </div>
+                          <div class="w3-col l10 m9">
+                            <h4>Jane <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
+                            <p>That was a great runway show! Thanks for everything.</p>
+                          </div>
+                        </div>
+                        <div class="w3-row w3-margin-bottom">
+                          <div class="w3-col l2 m3">
+                            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fashion-lady-Wallpaper.jpg" style="width:90px;">
+                          </div>
+                          <div class="w3-col l10 m9">
+                            <h4>John <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
+                            <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                          </div>
+                        </div>
+                        <div class="w3-row w3-margin-bottom">
+                          <div class="w3-col l2 m3">
+                            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fashion-lady-Wallpaper.jpg" style="width:90px;">
+                          </div>
+                          <div class="w3-col l10 m9">
+                            <h4>Anja <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
+                            <p>Cant wait for the runway to start!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                <!-- END BLOG ENTRIES -->
+                </div>
+            
+                <!-- About/Information menu -->
+                <div class="w3-col l4">
+                  <!-- About Card -->
+                  <div class="w3-white w3-margin">
+                    <img src="https://play-lh.googleusercontent.com/tF2U1lS7yA3GfVa3BUMXh3qHgFb1xKuSGl45lYugqfz-YQiWZLj7a5SwLwvKouP-O6v6" alt="Jane" style="width:100%" class="w3-grayscale">
+                    <div class="w3-container w3-black">
+                      <h4>My Name</h4>
+                      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                    </div>
+                  </div>
+                  <hr>
+            
+                  <!-- Posts -->
+                  <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                      <h4>Popular Posts</h4>
+                    </div>
+                    <ul class="w3-ul w3-hoverable w3-white">
+                      <li class="w3-padding-16">
+                        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fashion-lady-Wallpaper.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Denim</span>
+                        <br>
+                        <span>Sed mattis nunc</span>
+                      </li>
+                      <li class="w3-padding-16">
+                        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fashion-lady-Wallpaper.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Sweaters</span>
+                        <br>
+                        <span>Praes tinci sed</span>
+                      </li>
+                      <li class="w3-padding-16">
+                        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fashion-lady-Wallpaper.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Workshop</span>
+                        <br>
+                        <span>Ultricies congue</span>
+                      </li>
+                      <li class="w3-padding-16">
+                        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fashion-lady-Wallpaper.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+                        <span class="w3-large">Trends</span>
+                        <br>
+                        <span>Lorem ipsum dipsum</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr>
+            
+                  <!-- Advertising -->
+                  <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                      <h4>Advertise</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                      <!--<div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">-->
+                      <!--  <span class="w3-display-top">Your AD Here</span>-->
+                        <!--<div class="w3-col s6">-->
+                        <p><img src="https://assets.designhill.com/resize_img.php?atyp=st_page_file&pth=ad_bt_h1i1m6igs_org||BT839130||one_hd_1info_1multiple_image_slider_with_label_link_image1_img&flp=1653463627-1727017987628dda4b316642-04170300.jpg" alt="Your AD Here" style="width:100%" class="w3-grayscale"></p>
+                        <!--</div>-->
+                      <!--</div>-->
+                    </div>
+                  </div>
+                  <hr>
+            
+                  <!-- Tags -->
+                  <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                      <h4>Tags</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                      <p>
+                        <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
+                      </p>
+                    </div>
+                  </div>
+                  <hr>
+            
+                  <!-- Inspiration -->
+                  <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                      <h4>Inspiration</h4>
+                    </div>
+                    <div class="w3-row-padding w3-white">
+                      <div class="w3-col s6">
+                        <p><img src="https://wallpapers.com/images/hd/flower-lv-fashion-logo-dsn6hgbqae9ou9u9.jpg" alt="Jeans" style="width:100%"></p>
+                        <p><img src="https://st3.depositphotos.com/1137241/36584/i/450/depositphotos_365841676-stock-photo-aesthetics-fashion-wallpaper-apple-flowers.jpg" alt="Jeans" style="width:100%"></p>
+                      </div>
+                      <div class="w3-col s6">
+                        <p><img src="https://i.pinimg.com/originals/06/0e/48/060e4843388cdae6c6fe538501d7149b.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+                        <p><img src="https://burst.shopifycdn.com/photos/mens-fashion-stonewash-jeans-and-boots.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="Jeans" style="width:100%"></p>
+                     </div>
+                    </div>
+                  </div>
+                  <hr>
+            
+                  <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                      <h4>Follow Me</h4>
+                    </div>
+                    <div class="w3-container w3-xlarge w3-padding">
+                      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                      <i class="fa fa-instagram w3-hover-opacity"></i>
+                      <i class="fa fa-snapchat w3-hover-opacity"></i>
+                      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                      <i class="fa fa-twitter w3-hover-opacity"></i>
+                      <i class="fa fa-linkedin w3-hover-opacity"></i>
+                    </div>
+                  </div>
+                  <hr>
+                  
+                  <!-- Subscribe -->
+                  <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                      <h4>Subscribe</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                      <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+                      <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+                    </div>
+                  </div>
+            
+                <!-- END About/Intro Menu -->
+                </div>
+            
+              <!-- END GRID -->
+              </div>
+            
+            <!-- END w3-content -->
+            </div>
+            
+            <!-- Subscribe Modal -->
+            <div id="subscribe" class="w3-modal w3-animate-opacity">
+              <div class="w3-modal-content" style="padding:32px">
+                <div class="w3-container w3-white">
+                  <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+                  <h2 class="w3-wide">SUBSCRIBE</h2>
+                  <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                  <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+                  <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Footer -->
+            <footer class="w3-container w3-dark-grey" style="padding:32px">
+              <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+              <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            </footer>
+            
+            <script>
+            // Toggle between hiding and showing blog replies/comments
+            document.getElementById("myBtn").click();
+            function myFunction(id) {
+              var x = document.getElementById(id);
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+              } else { 
+                x.className = x.className.replace(" w3-show", "");
+              }
+            }
+            
+            function likeFunction(x) {
+              x.style.fontWeight = "bold";
+              x.innerHTML = "✓ Liked";
+            }
+            </script>
+            
+            <div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent && new Date().toISOString().slice(0, 10) > '2022-10-01' && new Date().toISOString().slice(0, 10) < '2022-12-25'){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Go for it</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Black Friday Prices",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 22px; font-weight: 700; text-transform: uppercase;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Get 90% Off!",h2Tag.setAttribute("style",'color: white; margin: 10px 0 15px 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Get Web Hosting for $0.99/month + SSL Certificate for FREE!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 15px;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/bf-2020-wp-inject-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script>
+            
+            
+               
+            <div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&¬ification.length>0&&null!=mainContent && new Date().toISOString().slice(0, 10) > '2023-10-29' && new Date().toISOString().slice(0, 10) < '2023-11-27'){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Claim deal</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="The Biggest Ever <span style='color: #FF5C62;'>Black Friday</span> Sale<div style='font-size: 16px;line-height: 24px;font-weight: 400;margin-top: 12px;'><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>Managed WordPress Hosting</div><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>WordPress Acceleration</div><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>Support from WordPres Experts 24/7</div></div>",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 46px; font-weight: 700;');h2Tag=document.createElement("H2");h2Tag.innerHTML="<span style='font-size: 20px'>$</span>2.49<span style='font-size: 20px'>/mo</span>",h2Tag.setAttribute("style",'color: white; margin: 10px 0 0 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="<span style='text-decoration:line-through; font-size: 14px; color:#727586'>$11.99.mo</span><br>+ 2 Months Free",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 15px; 0');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper" style="height: 90%"><img class="web-hosting-90-off-image" src="https://www.000webhost.com/static/default.000webhost.com/images/sales/bf2023/hero.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}else if(null!=wordpressAdminBody&¬ification.length>0&&null!=mainContent){var bulletPoints = mainContent.getElementsByTagName('li');var replacement=['Increased performance (up to 5x faster) - Thanks to Hostinger’s WordPress Acceleration and Caching solutions','WordPress AI tools - Creating a new website has never been easier','Weekly or daily backups - Your data will always be safe','Fast and dedicated 24/7 support - Ready to help you','Migration of your current WordPress sites to Hostinger is automatic and free!','Try Premium Web Hosting now - starting from $1.99/mo'];for (var i=0;i<bulletPoints.length;i++){bulletPoints[i].innerHTML = replacement[i];}}</script>
+                        
+    </body>
+</html>
